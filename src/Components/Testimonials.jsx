@@ -1,7 +1,9 @@
 
 import React from "react";
 
-import user1 from "../assets/hero.png";
+import user1 from "../assets/wadding.jfif";
+import user2 from "../assets/portrate2.jpg";
+import user3 from "../assets/portrate3.jpg";  
 
 const testimonials = [
   {
@@ -12,12 +14,12 @@ const testimonials = [
   {
     text: "অত্যন্ত দক্ষ, আন্তরিক এবং পেশাদার একজন ফটোগ্রাফার। পুরো ফটোশুটের অভিজ্ঞতা ছিল দারুণ উপভোগ্য।",
     name: "নোভা সুলতানা",
-    img: user1,
+    img: user2,
   },
   {
     text: "প্রতিবারই আমার ছবিগুলো এত সুন্দর আসে যে আমি মুগ্ধ হয়ে যাই। আপনার কাজের মান সত্যিই প্রশংসনীয়।",
     name: "মারিয়া ইসলাম",
-    img: user1,
+    img: user3,
   },
 ];
 

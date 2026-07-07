@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import img from "../assets/portrate2.jpg";
 import img1 from "../assets/wadding.jfif";
-import img2 from "../assets/brand.jfif";
+import img2 from "../assets/brand1.jfif";
 import img3 from "../assets/edite.webp";
 
 import AOS from "aos";
