@@ -49,9 +49,9 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-4">Socials</h3>
               <ul className="space-y-2 text-gray-400">
-                <li className="hover:text-white cursor-pointer transition">X (Twitter)</li>
                 <li className="hover:text-white cursor-pointer transition">Facebook</li>
                 <li className="hover:text-white cursor-pointer transition">Instagram</li>
+                <li className="hover:text-white cursor-pointer transition">X (Twitter)</li>
                 <li className="hover:text-white cursor-pointer transition">Snapchat</li>
               </ul>
             </div>

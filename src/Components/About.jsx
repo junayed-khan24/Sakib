@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import img from "../assets/photographer.jpg";
 import im2 from "../assets/photographerr.jpg"
+import img1 from "../assets/photographer1.jfif"
 import { Link } from "react-router";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ImOpt } from "react-icons/im";
 
 const About = () => {
   useEffect(() => {
@@ -29,7 +31,7 @@ const About = () => {
 
         <div data-aos="fade-up" className="hidden md:block space-y-2">
           <img src={im2} alt="" className="w-full h-48 object-cover rounded-2xl shadow-xl" />
-          <img src={im2} alt="" className="w-full h-48 object-cover rounded-2xl shadow-xl" />
+          <img src={img1} alt="" className="w-full h-48 object-cover rounded-2xl shadow-xl" />
         </div>
       </div>
 
@@ -138,7 +140,7 @@ const About = () => {
 
       <div data-aos="fade-up" data-aos-delay="200" className="text-center">
         <Link
-          to="/contact"
+          to="/booking"
           className="btn btn-primary bg-black text-white rounded-xl px-8 mx-auto mb-8 md:mb-16"
         >
           এখনই বুক করুন
