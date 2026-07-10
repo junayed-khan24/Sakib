@@ -1,7 +1,7 @@
 
 import React from "react";
 
-import user1 from "../assets/wadding.jfif";
+import user1 from "../assets/portrate4.jpg";
 import user2 from "../assets/portrate2.jpg";
 import user3 from "../assets/portrate3.jpg";  
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import leftImg from "../assets/port.webp";
+import leftImg from "../assets/edite.webp";
 import middleImg from "../assets/port.webp";
-import rightImg from "../assets/port.webp";
+import rightImg from "../assets/portrate1.jpg";
 import { Link } from "react-router";
 
 import AOS from "aos";
@@ -17,7 +17,7 @@ const FeaturedShots = () => {
   }, []);
 
   return (
-    <section className="py-20 text-center">
+    <section className=" text-center">
 
       {/* Title */}
       <h2 data-aos="fade-up" className="text-xl md:text-3xl font-bold">
