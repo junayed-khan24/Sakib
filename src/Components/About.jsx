@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import img from "../assets/photographer.jpg";
 import im2 from "../assets/photographerr.jpg"
 import img1 from "../assets/photographer1.jfif"
+import img2 from "../assets/photographer2.jpg"
 import { Link } from "react-router";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,24 +18,52 @@ const About = () => {
   }, []);
 
   return (
-    <div>
+   <div className="bg-base-100 w-full min-h-screen pt-12 md:pt-24">
+     <div className="max-w-7xl mx-auto px-4 py-10 lg:py-16">
 
-      {/* Image Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-10 lg:px-20 py-10 md:py-20">
-        
-        <img
-          data-aos="zoom-in"
-          src={img}
-          alt=""
-          className="w-full h-64 sm:h-80 md:h-full object-cover rounded-2xl shadow-xl"
-        />
+      {/* Heading */}
+        <h2
+          data-aos="fade-right"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
+        >
 
-        <div data-aos="fade-up" className="hidden md:block space-y-2">
-          <img src={im2} alt="" className="w-full h-48 object-cover rounded-2xl shadow-xl" />
-          <img src={img1} alt="" className="w-full h-48 object-cover rounded-2xl shadow-xl" />
+          <span className="text-primary">আমি </span>সাকিব হাসান
+        </h2>
+
+        <p
+          data-aos="fade-left"
+          className="font-normal font-regular text-secondary text-sm md:text-xl sm:text-lg mb-10 max-w-3xl"
+        >
+          A passionate photographer with an eye for honest, powerful moments
+        </p>
+
+        {/* Image Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <img
+            data-aos="zoom-in"
+            src={img}
+            alt=""
+            className="w-full h-64 sm:h-80 md:h-full object-cover rounded-2xl shadow-xl"
+          />
+
+          <div
+            data-aos="fade-up"
+            className="grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4 md:block hidden space-y-2"
+          >
+            <img
+              src={img1}
+              alt=""
+              className="w-full h-48 sm:h-64 object-cover rounded-2xl shadow-xl"
+            />
+            <img
+              src={img2}
+              alt=""
+              className="w-full h-48 sm:h-64 object-cover rounded-2xl shadow-xl"
+            />
+          </div>
         </div>
-      </div>
-
+      
       {/* My Story Section */}
       <section className="py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
@@ -63,11 +92,11 @@ const About = () => {
             </div>
 
             {/* Image */}
-            <div data-aos="zoom-in-up" className="flex justify-center items-center">
+            <div data-aos="zoom-in-up" className="flex justify-center  items-center">
               <img
-                src={img}
+                src={img2}
                 alt=""
-                className="lg:w-full shadow-xl border-4 hover:scale-105 transition"
+                className=" lg:w-full shadow-xl border-4 hover:scale-105 transition"
               />
             </div>
           </div>
@@ -101,7 +130,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
           <div data-aos="fade-right" className="overflow-hidden rounded-2xl">
             <img src={img} alt="" className="w-full md:h-[600px] object-cover hover:scale-110 transition duration-500" />
@@ -124,11 +153,11 @@ const About = () => {
           <div data-aos="fade-left" data-aos-delay="400" className="overflow-hidden rounded-2xl">
             <img src={img} alt="" className="w-full h-full object-cover hover:scale-110 transition duration-500" />
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* CTA */}
-      <div data-aos="zoom-in" className="text-center my-16">
+      {/* <div data-aos="zoom-in" className="text-center my-16">
         <h2 className="text-2xl md:text-4xl font-normal">
           আপনার বিশেষ মুহূর্তগুলো ধরে রাখতে প্রস্তুত?
         </h2>
@@ -136,7 +165,7 @@ const About = () => {
         <p className="text-secondary mt-3 text-sm md:text-xl leading-relaxed">
           চলুন কথা বলি—আপনার গল্পকে কীভাবে সুন্দরভাবে ফ্রেমে বন্দী করা যায়।
         </p>
-      </div>
+      </div> */}
 
       <div data-aos="fade-up" data-aos-delay="200" className="text-center">
         <Link
@@ -148,6 +177,7 @@ const About = () => {
       </div>
 
     </div>
+   </div>
   );
 };
 
