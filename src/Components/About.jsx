@@ -3,6 +3,7 @@ import img from "../assets/photographer.jpg";
 import im2 from "../assets/photographerr.jpg"
 import img1 from "../assets/photographer1.jfif"
 import img2 from "../assets/photographer2.jpg"
+import img3 from "../assets/photographer3.jfif"
 import { Link } from "react-router";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,11 +39,11 @@ const About = () => {
         </p>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full md:h-[500px] mb-10 overflow-hidden">
           
           <img
             data-aos="zoom-in"
-            src={img}
+            src={img3}
             alt=""
             className="w-full h-64 sm:h-80 md:h-full object-cover rounded-2xl shadow-xl"
           />
