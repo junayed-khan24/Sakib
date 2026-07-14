@@ -35,7 +35,7 @@ const About = () => {
           data-aos="fade-left"
           className="font-normal font-regular text-secondary text-sm md:text-xl sm:text-lg mb-10 max-w-3xl"
         >
-          A passionate photographer with an eye for honest, powerful moments
+          সাধারণ মুহূর্তকে অসাধারণ করে তোলার কারিগর; যাঁর ক্যামেরার ফ্রেমে বন্দি হয় জীবনের খাঁটি ও জীবন্ত গল্পগুলো।
         </p>
 
         {/* Image Grid */}
