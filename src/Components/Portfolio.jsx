@@ -13,7 +13,7 @@ import wedd2 from "../assets/wadding3.jpg";
 import wedd3 from "../assets/wadding2.jpg";
 import wedd4 from "../assets/wadding1.jfif";
 import wedd5 from "../assets/wadding3.jpg";
-import wedd6 from "../assets/hero.png";
+import wedd6 from "../assets/wedding4.jfif";
 import nature from "../assets/Nature.jfif";
 import nature1 from "../assets/nature4.jfif";
 import nature2 from "../assets/nature2.jpg";
@@ -129,7 +129,7 @@ const Portfolio = () => {
           <img
             src={wedd4}
             alt="Wedding 4"
-            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[456px] object-cover hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[456px] object-cover hidden md:block hover:scale-110 transition duration-300"
           />
         </div>
 
@@ -139,9 +139,9 @@ const Portfolio = () => {
           data-aos-delay="200"
         >
           <img
-            src={wedd5}
+            src={wedd6}
             alt="Wedding 5"
-            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[562px] object-cover hidden md:block hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[562px] object-cover  hover:scale-110 transition duration-300"
           />
         </div>
       </div>
@@ -168,7 +168,7 @@ const Portfolio = () => {
           <img
             src={nature4}
             alt="Nature 2"
-            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[433px] object-cover hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[433px] object-cover hidden md:block  hover:scale-110 transition duration-300"
           />
         </div>
 
@@ -176,7 +176,7 @@ const Portfolio = () => {
           <img
             src={nature3}
             alt="Nature 3"
-            className="rounded-lg shadow-md w-full md:w-[288px] md:h-[412px] object-cover hidden md:block  hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:w-[288px] md:h-[412px] object-cover  hover:scale-110 transition duration-300"
           />
         </div>
       </div>
@@ -224,7 +224,7 @@ const Portfolio = () => {
           <img
             src={Pet2}
             alt="Animal 2"
-            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[433px] object-cover hidden md:block hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:h-[412px] md:w-[433px] object-cover  hover:scale-110 transition duration-300"
           />
         </div>
 
@@ -232,7 +232,7 @@ const Portfolio = () => {
           <img
             src={Pet}
             alt="Animal 3"
-            className="rounded-lg shadow-md w-full md:w-[288px] md:h-[412px] object-cover hover:scale-110 transition duration-300"
+            className="rounded-lg shadow-md w-full md:w-[288px] md:h-[412px] object-cover hidden md:block hover:scale-110 transition duration-300"
           />
         </div>
       </div>

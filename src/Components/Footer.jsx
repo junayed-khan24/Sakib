@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPhone } from "react-icons/fa6";
 import { Link,  } from "react-router";
 
 const Footer = () => {
@@ -17,6 +18,9 @@ const Footer = () => {
             </h2>
             <p className="text-gray-400 mt-2 text-lg">
               ডিজিটাল ফটোগ্রাফার
+            </p>
+            <p className="text-gray-400 mt-4 text-lg flex items-center gap-2">
+              <FaPhone size={32} /> 0123456789
             </p>
           </div>
 
