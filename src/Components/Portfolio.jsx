@@ -15,12 +15,13 @@ import wedd4 from "../assets/wadding1.jfif";
 import wedd5 from "../assets/wadding3.jpg";
 import wedd6 from "../assets/hero.png";
 import nature from "../assets/Nature.jfif";
-import nature1 from "../assets/Nature1.png";
-import nature2 from "../assets/Nature2.jfif";
-import nature3 from "../assets/Nature3.jfif";
-import nature4 from "../assets/hero.png";
-import Pet from "../assets/hero.png";
-import Pet1 from "../assets/hero.png";
+import nature1 from "../assets/nature4.jfif";
+import nature2 from "../assets/nature2.jpg";
+import nature3 from "../assets/nature3.png";
+import nature4 from "../assets/nature5.png";
+import Pet from "../assets/animal.png";
+import Pet1 from "../assets/animal1.jfif";
+import Pet2 from "../assets/animal2.jpg";
 import { Link } from "react-router";
 
 const Portfolio = () => {
@@ -213,7 +214,7 @@ const Portfolio = () => {
       <div className="md:flex gap-3 items-center justify-center">
         <div className="overflow-hidden rounded-2xl" data-aos="zoom-in-up">
           <img
-            src={Pet}
+            src={Pet1}
             alt="Animal 1"
             className="rounded-lg shadow-md w-full md:h-[412px] md:w-[300px] object-cover hidden md:block hover:scale-110 transition duration-300"
           />
@@ -221,7 +222,7 @@ const Portfolio = () => {
 
         <div className="overflow-hidden rounded-2xl" data-aos="zoom-in">
           <img
-            src={Pet1}
+            src={Pet2}
             alt="Animal 2"
             className="rounded-lg shadow-md w-full md:h-[412px] md:w-[433px] object-cover hidden md:block hover:scale-110 transition duration-300"
           />
