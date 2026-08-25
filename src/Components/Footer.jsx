@@ -65,7 +65,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-800 text-sm">
-           © 2026  sakib hasan. All rights reserved
+           © 2025  sakib hasan. All rights reserved
         </div>
 
       </div>
