@@ -6,6 +6,7 @@ import Contact from "../Components/Contact";
 import Blog from "../Components/Blog";
 import BookingForm from "../Components/BookingForm";
 import Portfolio from "../Components/Portfolio";
+import Dashboard from "../Components/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Portfolio></Portfolio>
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard></Dashboard>
       }
     ],
   },
