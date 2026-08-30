@@ -33,6 +33,7 @@ const Navbar = () => {
             <NavLink to="/portfolio" className={navClass}>Portfolio</NavLink>
             <NavLink to="/blog" className={navClass}>Blog</NavLink>
             <NavLink to="/booking" className={navClass}>Booking</NavLink>
+            <NavLink to="/dashboard" className={navClass}>Dashboard</NavLink>
             <NavLink to="/contact" className={navClass}>Contact</NavLink>
           </div>
 
