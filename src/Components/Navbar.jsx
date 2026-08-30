@@ -66,6 +66,8 @@ const Navbar = () => {
           <br />
           <NavLink to="/booking" className={mobileNavClass} onClick={() => setIsOpen(false)}>Booking</NavLink>
           <br />
+            <NavLink to="/dashboard" className={mobileNavClass}>Dashboard</NavLink>
+          <br />
           <NavLink to="/contact" className={mobileNavClass} onClick={() => setIsOpen(false)}>Contact</NavLink>
 
         </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 
 const BookingForm = () => {
@@ -32,12 +33,22 @@ const BookingForm = () => {
 
       console.log(response.data);
 
-      alert("আপনার বুকিং সফলভাবে সম্পন্ন হয়েছে! 🎉");
+      Swal.fire({
+        icon: "success",
+        title: "বুকিং সফল হয়েছে! 🎉",
+        text: "আপনার বুকিং সফলভাবে সম্পন্ন হয়েছে।",
+        confirmButtonColor: "#000000",
+      });
 
       reset();
     } catch (error) {
       console.error(error);
-      alert("বুকিং করতে সমস্যা হয়েছে। আবার চেষ্টা করুন।");
+      Swal.fire({
+        icon: "error",
+        title: "সমস্যা হয়েছে!",
+        text: "বুকিং করতে সমস্যা হয়েছে। আবার চেষ্টা করুন।",
+        confirmButtonColor: "#000000",
+      });
     } finally {
       setLoading(false);
     }
@@ -74,7 +85,7 @@ const BookingForm = () => {
               placeholder="আপনার নাম লিখুন *"
               className="input input-bordered w-full rounded-xl"
               {...register("name", {
-                required: "নাম দেওয়া আবশ্যক",
+                required: "নাম দেওয়া আবশ্যক",
               })}
             />
 
@@ -105,8 +116,8 @@ const BookingForm = () => {
                 ইভেন্ট ফটোগ্রাফি
               </option>
 
-              <option value="বিয়ে ফটোগ্রাফি">
-                বিয়ে ফটোগ্রাফি
+              <option value="বিয়ে ফটোগ্রাফি">
+                বিয়ে ফটোগ্রাফি
               </option>
 
               <option value="পোর্ট্রেট ফটোগ্রাফি">
@@ -140,7 +151,7 @@ const BookingForm = () => {
               placeholder="মোবাইল নম্বর *"
               className="input input-bordered w-full rounded-xl"
               {...register("phone", {
-                required: "মোবাইল নম্বর দেওয়া আবশ্যক",
+                required: "মোবাইল নম্বর দেওয়া আবশ্যক",
               })}
             />
 
@@ -162,7 +173,7 @@ const BookingForm = () => {
               placeholder="ইমেইল ঠিকানা *"
               className="input input-bordered w-full rounded-xl"
               {...register("email", {
-                required: "ইমেইল দেওয়া আবশ্যক",
+                required: "ইমেইল দেওয়া আবশ্যক",
               })}
             />
 
@@ -184,7 +195,7 @@ const BookingForm = () => {
               placeholder="রাস্তার ঠিকানা *"
               className="input input-bordered w-full mb-3 rounded-xl"
               {...register("address", {
-                required: "ঠিকানা দেওয়া আবশ্যক",
+                required: "ঠিকানা দেওয়া আবশ্যক",
               })}
             />
 
