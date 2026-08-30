@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 import { FcManager } from "react-icons/fc";
+import { Link, Links } from "react-router";
 
 const Dashboard = () => {
   const [bookings, setBookings] = useState([]);
@@ -148,15 +149,19 @@ const Dashboard = () => {
 
                     <td>
                       <div className="flex justify-end gap-2">
+                        {/* <Link to="/details"> 
                         <button className="btn btn-ghost btn-xs">
                           বিস্তারিত
                         </button>
+                        </Link> */}
+                        
                         <button
                           className="btn btn-ghost btn-xs text-red-500"
                           onClick={() => handleDelete(booking._id)}
                         >
                           মুছুন
                         </button>
+                        
                       </div>
                     </td>
                   </tr>
@@ -194,9 +199,11 @@ const Dashboard = () => {
                 </div>
 
                 <div className="flex gap-2 mt-4">
+                  <Link to="/details">
                   <button className="btn btn-outline btn-sm flex-1">
                     বিস্তারিত
                   </button>
+                  </Link>
                   <button
                     className="btn btn-outline btn-sm text-red-500 flex-1"
                     onClick={() => handleDelete(booking._id)}
