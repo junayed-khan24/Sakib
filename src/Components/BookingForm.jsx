@@ -27,7 +27,7 @@ const BookingForm = () => {
       setLoading(true);
 
       const response = await axiosSecure.post(
-        "/bookings",
+        "https://sakibbackend-1.onrender.com/bookings",
         data
       );
 
