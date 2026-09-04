@@ -150,7 +150,7 @@ const BookingForm = () => {
 
   return (
     <div
-      className="px-4 py-16 md:px-10"
+      className="px-4 pt-20 pb-12 md:px-10"
       style={{
         background: "#FAF7F2",
         fontFamily: "'Hind Siliguri', 'Noto Sans Bengali', sans-serif",
