@@ -310,7 +310,7 @@ const Dashboard = () => {
                   </div>
 
                   <div className="mt-4 flex gap-2">
-                    <Link to="/details" className="flex-1">
+                    <Link to="" className="flex-1">
                       <button className="flex w-full items-center justify-center gap-1.5 rounded-lg border border-[#DDD6C8] py-2 text-[13.5px] text-[#3F3B36] transition-colors hover:border-[#B8863B]">
                         <Icon.Info className="h-4 w-4" />
                         বিস্তারিত
